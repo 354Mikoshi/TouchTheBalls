@@ -1,2 +1,4 @@
 # TouchTheBalls
-The first Unity game I made
+This is the first game I made with Unity.
+It is uploaded to 
+https://unityroom.com/games/touch_the_ball .
