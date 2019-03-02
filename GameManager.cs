@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
     private int displayscore = 0; //表示用スコア
     private AudioSource audioSource;
 
-    void Start() {
+    private void Start() {
         flag = false;
         StartCoroutine(CountdownCoroutine());
 
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour {
         
     }
 
-    void Update() {
+    private void Update() {
 
         //表示させるスコアが10刻みで変動していくようにする
         if (score > displayscore) {
@@ -79,13 +79,13 @@ public class GameManager : MonoBehaviour {
     }
 
     //時間切れ処理
-    void TimeUp() {
+    private void TimeUp() {
         timeupText.SetActive(true);
         audioSource.PlayOneShot(TimeUpSound);
     }
 
     //タイトル画面に戻る
-    void MoveToTitle() {
+    private void MoveToTitle() {
         SceneManager.LoadScene("StartScene");
     }
 
