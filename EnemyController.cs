@@ -9,13 +9,13 @@ public class EnemyController : MonoBehaviour {
     private int LeftOrRight;
     private bool flag;
 
-	private void Start () {
+    private void Start () {
         target = GameObject.Find("ThirdPersonController");
         gameManager = GameObject.Find("GameManager");
         flag = gameManager.GetComponent<GameManager>().flag;
-	}
+    }
 	
-	private void Update () {
+    private void Update () {
 
         flag = gameManager.GetComponent<GameManager>().flag;
 
