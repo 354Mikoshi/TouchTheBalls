@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class Gimmick1 : MonoBehaviour {
 
@@ -24,7 +24,7 @@ public class Gimmick1 : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	private void Update () {
+    private void Update () {
 
         flag = gameObject.GetComponent<GameManager>().flag;
 
