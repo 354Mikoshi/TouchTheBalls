@@ -9,17 +9,17 @@ public class PointBallController : MonoBehaviour {
     private const int RED_POINTBALL = 500;
     private const int YELLOW_POINTBALL = 100;
 
-	void Start () {
+    private void Start () {
         gameManager = GameObject.Find("GameManager");
         audiosource = this.gameObject.GetComponent<AudioSource>();
-	}
+    }
 	
-	void Update () {
+    private void Update () {
         //ステージ上から落ちたボールを消す
         if (transform.position.y < - 3) {
             Destroy(gameObject);
         }
-	}
+    }
 
     //RedPointBall入手処理
     public void GetRedPointBall() {
