@@ -11,14 +11,14 @@ public class Gimmick3 : MonoBehaviour {
     private bool flag;
 
     // Use this for initialization
-    void Start () {
+    private void Start () {
         flag = gameObject.GetComponent<GameManager>().flag;
         GameManager.time = 45.0f;
         GameManager.score = 0;
     }
 
     // Update is called once per frame
-    void Update () {
+    private void Update () {
 
         flag = gameObject.GetComponent<GameManager>().flag;
 
@@ -35,7 +35,7 @@ public class Gimmick3 : MonoBehaviour {
         if (flag) Result = GameManager.score;
     }
 
-    void CreatePointBall() {
+    private void CreatePointBall() {
         int angleY = UnityEngine.Random.Range(-180, 181);
         if (red_or_yellow == 3) {
             GameObject redpointball = Instantiate(redpointballPrefab,
