@@ -5,14 +5,14 @@ public class FloorController : MonoBehaviour {
     private bool flag;
     private int UpOrDown;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    private void Start () {
         flag = GameObject.Find("GameManager").GetComponent<GameManager>().flag;
         UpOrDown = Random.Range(0, 2);
-	}
+    }
 	
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    private void Update () {
 
         flag = GameObject.Find("GameManager").GetComponent<GameManager>().flag;
 
