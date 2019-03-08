@@ -12,7 +12,7 @@ public class Gimmick5 : MonoBehaviour {
     private bool flag;
 
     // Use this for initialization
-    void Start() {
+    private void Start() {
         RotatingCube = GameObject.Find("RotatingCube");
         flag = GameObject.Find("GameManager").GetComponent<GameManager>().flag;
         GameManager.time = 45.0f;
@@ -20,7 +20,7 @@ public class Gimmick5 : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {
+    private void Update() {
 
         flag = gameObject.GetComponent<GameManager>().flag;
 
@@ -48,7 +48,7 @@ public class Gimmick5 : MonoBehaviour {
         }
     }
 
-    void CreatePointBall() {
+    private void CreatePointBall() {
         var X = Random.Range(-15.0f, 15.0f);
         var Z = Random.Range(-15.0f, 15.0f);
         if (red_or_yellow == 3) {
@@ -61,7 +61,7 @@ public class Gimmick5 : MonoBehaviour {
         }
     }
 
-    void CreateRefrector() {
+    private void CreateRefrector() {
         Vector3[] AppearPos = new Vector3[] {
                 new Vector3(-11.25f, 2.0f, 15.0f),
                 new Vector3(-3.75f, 2.0f, 15.0f),
