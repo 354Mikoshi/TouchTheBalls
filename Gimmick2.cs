@@ -12,7 +12,7 @@ public class Gimmick2 : MonoBehaviour {
     private bool flag;
 
     // Use this for initialization
-    void Start () {
+    private void Start () {
 
         flag = gameObject.GetComponent<GameManager>().flag;
         GameManager.time = 45.0f;
@@ -27,7 +27,7 @@ public class Gimmick2 : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+    private void Update () {
 
         flag = gameObject.GetComponent<GameManager>().flag;
 
@@ -45,7 +45,7 @@ public class Gimmick2 : MonoBehaviour {
     }
 
     //ボールの生成
-    void CreatePointBall() {
+    private void CreatePointBall() {
         var X = UnityEngine.Random.Range(-15.0f, 15.0f);
         var Z = UnityEngine.Random.Range(-15.0f, 15.0f);
         if (red_or_yellow == 3) {
